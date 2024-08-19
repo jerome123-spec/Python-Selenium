@@ -1,7 +1,7 @@
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import sys 
-sys.path.append(r'C:\Users\Jerome\Desktop\Python Selenium')
+sys.path.append(r'C:\Users\Jerome\Desktop\Python-Selenium')
 from constant import *
 from PageObjectModel.Locators.PageLocators import *
 import time
