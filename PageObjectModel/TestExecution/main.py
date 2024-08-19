@@ -25,9 +25,6 @@ AISearch(driver)
 # VideosFilesUpload(driver)
 
 
-
-
-
 time.sleep(1000)
 driver.close()
 driver.quit()
