@@ -2,13 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
-import sys 
-sys.path.append(r'C:\Users\Jerome\Desktop\Python-Selenium')
 from PageObjectModel.Pages.LoginPage import LoginPage
 from PageObjectModel.Pages.HomePageVideosFiles import VideosFilesUpload
 from PageObjectModel.Pages.AISearch import AISearch
 from constant import *
-
 
 
 driver = webdriver.Chrome()

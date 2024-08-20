@@ -1,10 +1,9 @@
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
-import sys 
-sys.path.append(r'C:\Users\Jerome\Desktop\Python-Selenium')
 from PageObjectModel.Locators.PageLocators import *
 from constant import *
+
 
 class AISearch():
 
@@ -29,6 +28,12 @@ class AISearch():
         time.sleep(5)
         print("The Test completed")
 
+    def button_assertion(self):
+        self.driver.find_element(By.ID , Locators.homepage_send_button).is_enabled()
+        print("The button is enabled")
+        print("The test was completely done!")
+        self.driver.find_element(By.ID , Locators.homepage_send_button)
+        assertEqualt((''))
     # def ai_search(self):
     #     time.sleep(60)
     #     self.driver.find_element(By.ID , Locators.chatroom_select_ai_search).click()
