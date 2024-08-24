@@ -18,5 +18,8 @@ class Locators():
     chatroom_select_ai_search = "source-button-chatroom"
     chatroom_text_field = "query-area-chatroom"
     chatroom_send_button = "send-button-chatroom"
-    chatroom_ai_web_search = "flex flex-col items-start justify-start gap-2 max-w-[145px] px-4 py-2 cursor-pointer hover:bg-gray-200 bg-gray-200 rounded-md"
+    chatroom_select_menu_icon = "open-menu-button-chatroom"
+    chatroom_generate_image = "generate-image-toggle-button-chatroom"
+    
+    
     

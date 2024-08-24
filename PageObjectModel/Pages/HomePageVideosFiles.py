@@ -6,7 +6,7 @@ from constant import *
 class VideosFilesUpload():
     def __init__(self , driver):
         self.driver = driver
-        self.UploadTest()
+        self.upload_test()
         
     
     def Navigate(self):
@@ -24,9 +24,11 @@ class VideosFilesUpload():
         time.sleep(2)
         fileinput.send_keys(self.file_path)
         time.sleep(2)
+    def click_upload_button(self):
         self.driver.find_element(By.ID , Locators.Upload_button).click()
 
-    def UploadTest(self):
+    def upload_test(self):
         self.Navigate()
         self.TranscoderPage()
         self.UploadProcess()
+        self.drivr.find_element()
