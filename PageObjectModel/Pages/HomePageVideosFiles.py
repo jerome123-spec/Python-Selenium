@@ -31,4 +31,5 @@ class VideosFilesUpload():
         self.Navigate()
         self.TranscoderPage()
         self.UploadProcess()
-        self.drivr.find_element()
+        self.click_upload_button()
+        

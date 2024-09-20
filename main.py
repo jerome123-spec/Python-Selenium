@@ -1,8 +1,9 @@
 from selenium import webdriver
 import time
 from PageObjectModel.Pages.LoginPage import LoginPage
-from PageObjectModel.Pages.HomePageVideosFiles import VideosFilesUpload
 from PageObjectModel.Pages.AISearch import AISearch
+from PageObjectModel.Pages.FileUpload import FileDocumentUpload
+from PageObjectModel.Pages.HomePageVideosFiles import VideosFilesUpload
 from constant import *
 
 
@@ -13,14 +14,18 @@ driver.maximize_window()
 #UserLogin
 LoginPage(driver)
 
-#Norml Chat and AI Search
+#Normal Chat and AI Search
 AISearch(driver)
 
-# VideosFilesUpload
+#File Upload
+FileDocumentUpload(driver)
+
+
+# Videos Files Upload
 # VideosFilesUpload(driver)
 
 
-time.sleep(1000)
+time.sleep(10)
 driver.close()
 driver.quit()
 print('Test Completed')

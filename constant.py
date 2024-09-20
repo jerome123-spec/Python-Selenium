@@ -2,9 +2,12 @@
 STAGING = 'https://ai-staging.salina.app/login'
 PRODUCTION = 'https://ai.salina.app/login'
 
-#WaitingTime
+#WaitingTimeAISearch
+WAITINGRESPONSE = 80
+WAITINGNORMALRESPONSE = 40
 WAITINGTIME = 2
 UPLOADTIME = 5
+FILE_ATTACHMENT = 60
 #UserCredentials
 USERNAME = 'mediameterinctesting@gmail.com'
 PASSWORD = 'Cool9319*'

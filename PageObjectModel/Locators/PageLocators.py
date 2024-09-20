@@ -23,12 +23,23 @@ class Locators():
     chatroom_file_input = "file"
     chatroom_upload_button = "video-upload-btn-video-file"   
 
-   #Homepage Videos Upload
+   #Homepage Meatball Icon
     homepage_attachment_id = "attachments-button-home"
+
+    #Videos Files Upload
     select_attachment_id = "upload-video-button-home"
     click_to_redirect_transcoder_id = "from-computer-div"
     file_input = "file"
     Upload_button = "video-upload-btn-video-file"
 
+    #File Upload
+    clicks_file_button ="add-file-button-home"
+    file_upload = "file-input-home"
 
+    #Agent Icon
+    chatroom_agent_icon = "add-agents-button-chatroom"
+    chatbot_agent_selected = "agent-button-663f37c96d43c6f83a0f7513"
+    
+    #Homepage
+    click_homepage = "unified-salina-logo-word"
     
