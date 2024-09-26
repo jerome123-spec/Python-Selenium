@@ -4,18 +4,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from constant import *
 import time
-from PageObjectModel.Locators.PageLocators import *
+from PageObjectModel.Locators.PageLocators import Locators
 from PageObjectModel.Pages.AISearch import AISearch
 
 class FileDocumentUpload(AISearch):
     def __init__(self , driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, GLOBALTIMEWAIT)
+        self.wait = WebDriverWait(driver, GLOBAL_TIME_WAIT)
         self.test_file_execution()
         
     def file_document_upload_process(self):
         fileinput = self.wait.until(EC.presence_of_element_located((By.ID, Locators.file_upload)))
-        self.file_path = NORMAL_FILE_UPLOAD
+        self.file_path = NORMAL_FILE_UPLOAD_ATTACHMENT
         fileinput.send_keys(self.file_path)
 
     def test_homepage_file_upload(self):
@@ -43,6 +43,7 @@ class FileDocumentUpload(AISearch):
         self.chatroom_click_html()
         self.chatroom_send_text("What is Salina? Give me 5 features of Salina.")
         self.chatroom_click_send_icon()
+        time.sleep(GENERATE_IMAGE_WAIT)
 
     def test_normal_file_upload_file_attachment(self):
         self.chatroom_click_select_attachment()

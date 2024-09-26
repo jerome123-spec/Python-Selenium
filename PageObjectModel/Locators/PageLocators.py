@@ -43,3 +43,9 @@ class Locators():
     #Homepage
     click_homepage = "unified-salina-logo-word"
     
+    #Transcript
+    play_video_player = "video-controller-for-pause-play"
+    translate_button = "target-language-button-videotranslated"
+    display_waveform = "toggle-timeline-button"
+    translate_tagalog = "tl-item-column"
+    

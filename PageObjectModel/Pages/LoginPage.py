@@ -2,12 +2,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from PageObjectModel.Locators.PageLocators import Locators  
-from constant import USERNAME , PASSWORD , STAGING , GLOBALTIMEWAIT
+from constant import USERNAME , PASSWORD , STAGING , GLOBAL_TIME_WAIT
 
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, GLOBALTIMEWAIT)
+        self.wait = WebDriverWait(driver, GLOBAL_TIME_WAIT)
         self.driver.get(STAGING)
         self.perform_login()
         
